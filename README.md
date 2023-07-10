@@ -1,6 +1,6 @@
 # What is Bootstrap?
 
-Bootstrap is a cutting-edge open-source framework that emerged in late 2011, revolutionizing the way responsive websites are designed with a mobile-first approach. Its versatility makes it widely accessible for HTML, CSS, and JS applications, and it's fully compatible with server-side languages like PHP, Node, among others. With Bootstrap, developers can streamline their workflow and focus on creating engaging front-end designs, thanks to the platform's pre-made templates, which provide the basic needs for any website. As a result, developers can dedicate more time to enhancing and refining their designs while still ensuring responsiveness and aesthetic appeal, thus delivering top-notch user experiences.
+**Bootstrap** is a cutting-edge open-source framework that emerged in late 2011, revolutionizing the way responsive websites are designed with a mobile-first approach. Its versatility makes it widely accessible for HTML, CSS, and JS applications, and it's fully compatible with server-side languages like PHP, Node, among others. With Bootstrap, developers can streamline their workflow and focus on creating engaging front-end designs, thanks to the platform's pre-made templates, which provide the basic needs for any website. As a result, developers can dedicate more time to enhancing and refining their designs while still ensuring responsiveness and aesthetic appeal, thus delivering top-notch user experiences.
 
 # About this website
 
