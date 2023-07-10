@@ -1,0 +1,120 @@
+body
+{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    background-color: #1E1E1E;
+    height: 100%;
+}
+
+/* Cards */
+
+.card
+{
+    background-color: #333333;
+    color: #d3d3d3;
+    font-size:larger;
+    border: 2px solid black;
+} 
+
+.card-header
+{
+    background-color: #252526;
+    color: white;
+}
+
+.card-text 
+{
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.card-footer
+{
+    background-color: #252526;   
+}
+
+.card-footer a 
+{
+    font-size: 1em;
+}
+
+/* Carousel */
+
+#carouselSlide h1 
+{
+    position: relative;
+    top: -0.5em;
+    font-size: 6em;
+    font-weight: 200;
+}
+
+.carousel-caption h1
+{
+    font-size: 8em;
+}
+
+.carousel-caption 
+{
+    position: absolute;
+    top: 40%;
+}
+
+.carouselImage 
+{
+    height: 500px;
+}
+
+.carouselImage img 
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* Component example card */
+
+.componentExample 
+{
+    background-color: #333333;
+}
+
+#componentExampleText 
+{
+    color: lightgray;
+    font-size: large;
+}
+
+#sitesImages h1 
+{
+    color: lightgray;
+}
+
+#sitesImages a 
+{
+    display: inline-block;
+}
+
+/* Table in About Bootstrap 5 page */
+
+table th
+{
+    font-weight: bold;
+    color:white;
+}
+table td
+{
+    color:lightgray;
+}
+
+table tr:hover 
+{
+    background-color: #1E1E1E;
+} 
+
+table td:hover
+{
+    color:gray;
+}
+
+thead tr 
+{
+    background-color: #1E1E1E;
+}

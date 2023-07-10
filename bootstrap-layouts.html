@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="On this page, you can find more information about Bootstrap 5 Layouts, types and examples of layouts etc.">
+    <title>WBT2022-27-28-30 Bootstrap 5</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-layouts.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/external.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    
+  <!--NAVBAR-->
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#breakpointsLink">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z" fill="#d3d3d3"/>
+                </svg>&nbsp;&nbsp;Bootstrap 5</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about-us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about-bootstrap.html">About Bootstrap 5</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./bootstrap-components.html">Bootstrap 5 Components</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./bootstrap-layouts.html">Bootstrap 5 Layouts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+      <!-- SIDEBAR -->
+
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 sidebar" style="background-color: #333333;">
+              <div class="position-fixed" style="width:inherit;">
+                  <div class="container mt-4 mb-2">
+                    <h2 class="text-center p-1 d-none d-sm-none d-lg-inline">Content</h2>
+                  </div>
+                    <ul class="nav nav-pills flex-column w-100">
+                      <li class="nav-item py-1">
+                        <a class="nav-link" href="#breakpointsLink">
+                            <svg width="20" height="20" fill="#d3d3d3" class="mb-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46.484 46.484" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M3.749,37.402c0.79,0.392,1.636,0.59,2.513,0.59c2.169,0,4.113-1.205,5.076-3.146c1.156-2.33,0.548-5.076-1.302-6.732 l12.508-16.937c0.423,0.1,0.857,0.151,1.3,0.151c1.555,0,2.988-0.628,4.034-1.696l7.713,5.886 c-0.164,0.235-0.315,0.481-0.446,0.744c-1.188,2.392-0.515,5.225,1.453,6.864l-3.841,12.106c-0.284-0.045-0.571-0.074-0.863-0.074 c-2.168,0-4.112,1.205-5.075,3.146c-1.388,2.799-0.24,6.202,2.557,7.59c0.789,0.391,1.636,0.59,2.513,0.59 c2.169,0,4.112-1.205,5.076-3.146c1.187-2.393,0.515-5.225-1.453-6.864l3.841-12.106c0.284,0.045,0.571,0.074,0.864,0.074 c2.167,0,4.112-1.205,5.075-3.146c1.388-2.796,0.24-6.201-2.557-7.589c-0.791-0.392-1.637-0.591-2.514-0.591 c-0.787,0-1.542,0.163-2.232,0.458L29.35,6.981c0.6-2.508-0.58-5.195-2.986-6.39C25.572,0.199,24.727,0,23.85,0 c-2.168,0-4.112,1.206-5.076,3.147c-1.117,2.252-0.589,4.897,1.12,6.567L7.299,26.768c-0.338-0.062-0.681-0.104-1.03-0.104 c-2.168,0-4.112,1.207-5.075,3.148C-0.195,32.609,0.952,36.014,3.749,37.402z M34.275,42.006c-0.453,0.913-1.369,1.48-2.39,1.48 c-0.41,0-0.808-0.094-1.181-0.278c-1.314-0.652-1.854-2.253-1.2-3.569c0.452-0.912,1.366-1.48,2.388-1.48 c0.411,0,0.809,0.095,1.18,0.279C34.388,39.089,34.928,40.689,34.275,42.006z M41.4,16.394c1.314,0.653,1.854,2.254,1.202,3.568 c-0.452,0.913-1.368,1.48-2.389,1.48c-0.411,0-0.81-0.094-1.181-0.278c-1.315-0.652-1.854-2.253-1.203-3.568 c0.453-0.913,1.369-1.48,2.39-1.48C40.632,16.115,41.027,16.209,41.4,16.394z M21.461,4.482c0.453-0.913,1.368-1.48,2.389-1.48 c0.411,0,0.809,0.094,1.18,0.278c1.315,0.653,1.855,2.254,1.203,3.568c-0.453,0.913-1.367,1.48-2.389,1.48 c-0.411,0-0.809-0.094-1.181-0.278C21.347,7.398,20.808,5.797,21.461,4.482z M3.881,31.145c0.453-0.912,1.367-1.48,2.388-1.48 c0.411,0,0.808,0.095,1.18,0.279c1.315,0.651,1.854,2.252,1.202,3.568c-0.636,1.28-2.269,1.846-3.569,1.202 C3.766,34.062,3.228,32.461,3.881,31.145z"></path> </g> </g> </g></svg>
+                            <span class="d-none d-sm-none d-lg-inline">
+                            &nbsp;Breakpoints</span></a>
+                      </li>
+                      <li class="nav-item py-1">
+                        <a class="nav-link" href="#containersLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.5 7.27783L12 12.0001M12 12.0001L3.49997 7.27783M12 12.0001L12 21.5001M21 16.0586V7.94153C21 7.59889 21 7.42757 20.9495 7.27477C20.9049 7.13959 20.8318 7.01551 20.7354 6.91082C20.6263 6.79248 20.4766 6.70928 20.177 6.54288L12.777 2.43177C12.4934 2.27421 12.3516 2.19543 12.2015 2.16454C12.0685 2.13721 11.9315 2.13721 11.7986 2.16454C11.6484 2.19543 11.5066 2.27421 11.223 2.43177L3.82297 6.54288C3.52345 6.70928 3.37369 6.79248 3.26463 6.91082C3.16816 7.01551 3.09515 7.13959 3.05048 7.27477C3 7.42757 3 7.59889 3 7.94153V16.0586C3 16.4013 3 16.5726 3.05048 16.7254C3.09515 16.8606 3.16816 16.9847 3.26463 17.0893C3.37369 17.2077 3.52345 17.2909 3.82297 17.4573L11.223 21.5684C11.5066 21.726 11.6484 21.8047 11.7986 21.8356C11.9315 21.863 12.0685 21.863 12.2015 21.8356C12.3516 21.8047 12.4934 21.726 12.777 21.5684L20.177 17.4573C20.4766 17.2909 20.6263 17.2077 20.7354 17.0893C20.8318 16.9847 20.9049 16.8606 20.9495 16.7254C21 16.5726 21 16.4013 21 16.0586Z" stroke="#d3d3d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            <span class="d-none d-sm-none d-lg-inline">
+                            &nbsp;Containers</span></a>
+                      </li>
+                      <li class="nav-item py-1">
+                        <a class="nav-link" href="#gridLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.75 3C3.88235 3 3 3.88235 3 6.75C3 9.61765 3.88235 10.5 6.75 10.5C9.61765 10.5 10.5 9.61765 10.5 6.75C10.5 3.88235 9.61765 3 6.75 3Z" stroke="#d3d3d3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6.75 13.5C3.88235 13.5 3 14.3824 3 17.25C3 20.1176 3.88235 21 6.75 21C9.61765 21 10.5 20.1176 10.5 17.25C10.5 14.3824 9.61765 13.5 6.75 13.5Z" stroke="#d3d3d3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.25 13.5C14.3824 13.5 13.5 14.3824 13.5 17.25C13.5 20.1176 14.3824 21 17.25 21C20.1176 21 21 20.1176 21 17.25C21 14.3824 20.1176 13.5 17.25 13.5Z" stroke="#d3d3d3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.25 3C14.3824 3 13.5 3.88235 13.5 6.75C13.5 9.61765 14.3824 10.5 17.25 10.5C20.1176 10.5 21 9.61765 21 6.75C21 3.88235 20.1176 3 17.25 3Z" stroke="#d3d3d3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            <span class="d-none d-sm-none d-lg-inline">&nbsp;Grid</span>
+                            </a>
+                      </li>
+                      <li class="nav-item py-1">
+                        <a class="nav-link" href="#columnsLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.87868 2.87868C3.44129 2.31607 4.20435 2 5 2H19C19.7957 2 20.5587 2.31607 21.1213 2.87868C21.6839 3.44129 22 4.20435 22 5V19C22 19.7957 21.6839 20.5587 21.1213 21.1213C20.5587 21.6839 19.7957 22 19 22H5C4.20435 22 3.44129 21.6839 2.87868 21.1213C2.31607 20.5587 2 19.7957 2 19V5C2 4.20435 2.31607 3.44129 2.87868 2.87868ZM13 20H19C19.2652 20 19.5196 19.8946 19.7071 19.7071C19.8946 19.5196 20 19.2652 20 19V5C20 4.73478 19.8946 4.48043 19.7071 4.29289C19.5196 4.10536 19.2652 4 19 4H13V20ZM11 4V20H5C4.73478 20 4.48043 19.8946 4.29289 19.7071C4.10536 19.5196 4 19.2652 4 19V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H11Z" fill="#d3d3d3"></path> </g></svg>
+                            <span class="d-none d-sm-none d-lg-inline">&nbsp;Columns</span></a>
+                      </li>
+                      <li class="nav-item py-1">
+                        <a class="nav-link" href="#utilitiesLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 6C3 3.79086 4.79086 2 7 2H17C19.2091 2 21 3.79086 21 6C21 8.20914 19.2091 10 17 10H7C4.79086 10 3 8.20914 3 6Z" stroke="#d3d3d3" stroke-width="2"></path> <path d="M3 16C3 14.8954 3.89543 14 5 14H8C9.10457 14 10 14.8954 10 16V19C10 20.1046 9.10457 21 8 21H5C3.89543 21 3 20.1046 3 19V16Z" stroke="#d3d3d3" stroke-width="2"></path> <path d="M14 17.5C14 15.567 15.567 14 17.5 14C19.433 14 21 15.567 21 17.5C21 19.433 19.433 21 17.5 21C15.567 21 14 19.433 14 17.5Z" stroke="#d3d3d3" stroke-width="2"></path> </g></svg>
+                            <span class="d-none d-sm-none d-lg-inline">&nbsp;Utilities</span></a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+
+                <!-- LAYOUTS -->
+
+                <div class="col-10 mb-5">
+                    <div class="container-fluid mt-3">
+                        <h1 class="text-center mt-4">Bootstrap 5 Layouts</h1>
+                        <p class="mt-4 px-4">Bootstrap 5 layouts are the building blocks for creating web pages using Bootstrap. They are a collection of CSS classes and styles that define the 
+                            structure and organization of the content on a page. The layout system uses a grid-based approach, where content is divided into rows and columns. The grid system
+                            is based on a 12-column layout, and each column can be further divided into sub-columns.
+                            <a id="breakpointsLink"></a>
+                        </p>
+                        
+                        <!-- BREAKPOINTS -->
+                        <div class="container-fluid dark-background mt-4 pt-4 pb-4">
+                          <h2 class="text-center mb-3 mt-2">
+                            <svg width="40" height="40" fill="#12802d" class="mb-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46.484 46.484" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M3.749,37.402c0.79,0.392,1.636,0.59,2.513,0.59c2.169,0,4.113-1.205,5.076-3.146c1.156-2.33,0.548-5.076-1.302-6.732 l12.508-16.937c0.423,0.1,0.857,0.151,1.3,0.151c1.555,0,2.988-0.628,4.034-1.696l7.713,5.886 c-0.164,0.235-0.315,0.481-0.446,0.744c-1.188,2.392-0.515,5.225,1.453,6.864l-3.841,12.106c-0.284-0.045-0.571-0.074-0.863-0.074 c-2.168,0-4.112,1.205-5.075,3.146c-1.388,2.799-0.24,6.202,2.557,7.59c0.789,0.391,1.636,0.59,2.513,0.59 c2.169,0,4.112-1.205,5.076-3.146c1.187-2.393,0.515-5.225-1.453-6.864l3.841-12.106c0.284,0.045,0.571,0.074,0.864,0.074 c2.167,0,4.112-1.205,5.075-3.146c1.388-2.796,0.24-6.201-2.557-7.589c-0.791-0.392-1.637-0.591-2.514-0.591 c-0.787,0-1.542,0.163-2.232,0.458L29.35,6.981c0.6-2.508-0.58-5.195-2.986-6.39C25.572,0.199,24.727,0,23.85,0 c-2.168,0-4.112,1.206-5.076,3.147c-1.117,2.252-0.589,4.897,1.12,6.567L7.299,26.768c-0.338-0.062-0.681-0.104-1.03-0.104 c-2.168,0-4.112,1.207-5.075,3.148C-0.195,32.609,0.952,36.014,3.749,37.402z M34.275,42.006c-0.453,0.913-1.369,1.48-2.39,1.48 c-0.41,0-0.808-0.094-1.181-0.278c-1.314-0.652-1.854-2.253-1.2-3.569c0.452-0.912,1.366-1.48,2.388-1.48 c0.411,0,0.809,0.095,1.18,0.279C34.388,39.089,34.928,40.689,34.275,42.006z M41.4,16.394c1.314,0.653,1.854,2.254,1.202,3.568 c-0.452,0.913-1.368,1.48-2.389,1.48c-0.411,0-0.81-0.094-1.181-0.278c-1.315-0.652-1.854-2.253-1.203-3.568 c0.453-0.913,1.369-1.48,2.39-1.48C40.632,16.115,41.027,16.209,41.4,16.394z M21.461,4.482c0.453-0.913,1.368-1.48,2.389-1.48 c0.411,0,0.809,0.094,1.18,0.278c1.315,0.653,1.855,2.254,1.203,3.568c-0.453,0.913-1.367,1.48-2.389,1.48 c-0.411,0-0.809-0.094-1.181-0.278C21.347,7.398,20.808,5.797,21.461,4.482z M3.881,31.145c0.453-0.912,1.367-1.48,2.388-1.48 c0.411,0,0.808,0.095,1.18,0.279c1.315,0.651,1.854,2.252,1.202,3.568c-0.636,1.28-2.269,1.846-3.569,1.202 C3.766,34.062,3.228,32.461,3.881,31.145z"></path> </g> </g> </g></svg>
+                            Breakpoints</h2>
+                            
+                          <p class="px-3 mt-4">Bootstrap 5 <b>breakpoints</b> refer to customizable widths that allow you to define how your responsive layout will adapt to different device or viewport sizes. 
+                            By setting breakpoints, you can control the behavior of your design and ensure that it remains optimized for all screen sizes.
+                            By using these breakpoints, you can create responsive designs that adapt to different screen sizes and devices. For example, you can use the 
+                            <b>.d-none</b> and <b>.d-block</b> classes to show or hide elements at specific breakpoints, or use the .col-- classes to create responsive grid layouts that 
+                            adjust based on the available screen size. Overall, the breakpoints in Bootstrap 5 provide a flexible and powerful way to create responsive designs 
+                            that adapt to different screen sizes and devices.
+                          <br><br>Available breakpoints in Bootstrap are:
+                          </p>
+                            <div class="container">
+                              <table class="table">
+                                  <thead>
+                                    <tr class="text-light">
+                                      <th scope="col">Breakpoint</th>
+                                      <th scope="col">Class name</th>
+                                      <th scope="col">Dimensions</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="text-light">
+                                      <th class="gray">Extra small</th>
+                                      <td class="orange">/</td>
+                                      <td class="lightblue">&lt;576px</td>
+                                    </tr>
+                                    <tr class="text-light">
+                                      <th class="gray">Small</th>
+                                      <td class="orange">sm</td>
+                                      <td class="lightblue">&ge;576px</td>
+                                    </tr>
+                                    <tr class="text-light">
+                                      <th class="gray">Medium</th>
+                                      <td class="orange">md</td>
+                                      <td class="lightblue">&ge;768px</td>
+                                    </tr>
+                                    <tr class="text-light">
+                                      <th class="gray">Large</th>
+                                      <td class="orange">lg</td>
+                                      <td class="lightblue">&ge;992px</td>
+                                    </tr>
+                                    <tr class="text-light">
+                                      <th class="gray">Extra large</th>
+                                      <td class="orange">xl</td>
+                                      <td class="lightblue">&ge;1200px</td>
+                                    </tr>
+                                    <tr class="text-light">
+                                      <th class="gray">Extra extra large</th>
+                                      <td class="orange">xxl</td>
+                                      <td class="lightblue">&ge;1400px</td>
+                                    </tr>
+                                   
+                                  </tbody>
+                              </table>
+                          </div>
+                          <a id="containersLink"></a>
+                          </div>
+                         
+                    <!-- CONTAINERS -->
+                      <div class="container-fluid dark-background mt-4 pt-4 pb-4">
+                        <h2 class="mt-3 mb-3 text-center">
+                          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.5 7.27783L12 12.0001M12 12.0001L3.49997 7.27783M12 12.0001L12 21.5001M21 16.0586V7.94153C21 7.59889 21 7.42757 20.9495 7.27477C20.9049 7.13959 20.8318 7.01551 20.7354 6.91082C20.6263 6.79248 20.4766 6.70928 20.177 6.54288L12.777 2.43177C12.4934 2.27421 12.3516 2.19543 12.2015 2.16454C12.0685 2.13721 11.9315 2.13721 11.7986 2.16454C11.6484 2.19543 11.5066 2.27421 11.223 2.43177L3.82297 6.54288C3.52345 6.70928 3.37369 6.79248 3.26463 6.91082C3.16816 7.01551 3.09515 7.13959 3.05048 7.27477C3 7.42757 3 7.59889 3 7.94153V16.0586C3 16.4013 3 16.5726 3.05048 16.7254C3.09515 16.8606 3.16816 16.9847 3.26463 17.0893C3.37369 17.2077 3.52345 17.2909 3.82297 17.4573L11.223 21.5684C11.5066 21.726 11.6484 21.8047 11.7986 21.8356C11.9315 21.863 12.0685 21.863 12.2015 21.8356C12.3516 21.8047 12.4934 21.726 12.777 21.5684L20.177 17.4573C20.4766 17.2909 20.6263 17.2077 20.7354 17.0893C20.8318 16.9847 20.9049 16.8606 20.9495 16.7254C21 16.5726 21 16.4013 21 16.0586Z" stroke="#12802d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                          Containers</h2>
+
+                        <p class="px-3 mt-4">
+                          In Bootstrap 5, containers are used to wrap and center the content of a webpage. There are two main types of 
+                          containers: <b>.container</b> and <b>.container-fluid</b>.
+                          <br><br>
+                          The <b>.container</b> class creates a fixed-width container that is centered on the page. The width of the container 
+                          changes at different breakpoints, based on the screen size. By default, the container has a maximum width of 1140px, 
+                          but this can be customized using Sass variables.
+                          <br><br>
+                          The <b>.container-fluid</b> class creates a full-width container that spans the entire width of the viewport. This means that 
+                          the content within the container will expand or contract based on the size of the viewport. <br>
+                          More about Bootstrap 5 Layouts you can find <a href="https://getbootstrap.com/docs/5.3/layout/containers/" style="text-decoration: none;">here</a>.  
+                        </p>
+                        <p class="px-3">Here is the difference between classes <b>.container</b> and <b>.container-fluid</b>:</p>
+                        <div class="container">
+                          <div class="row">
+              
+                              <div class="col-md-6 mb-3">
+                                  <div class="card h-100 cardHover">  
+                                      <img src="./img/sites/container-fluid.png" class="card-img-top h-100" alt="Example of using .container-fluid class.">
+                                      <div class="card-header">
+                                          <h3 class="card-title text-center my-2">.container-fluid</h3>
+                                      </div>
+                                      <div class="card-body">
+                                        <p class="card-title my-3">
+                                          <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"container-fluid"</span><span class="gray">&gt;</span><br>
+                                            ... <br>
+                                          <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span>
+                                        </p>
+                                      </div>
+                                  </div>
+                              </div>
+              
+                              <div class="col-md-6 mb-3 ">
+                                <div class="card h-100 cardHover">  
+                                    <img src="./img/sites/container.png" class="card-img-top h-100" alt="Example of using .container class.">
+                                    <div class="card-header">
+                                        <h3 class="card-title text-center my-2">.container</h3>
+                                    </div>
+                                    <div class="card-body">
+                                      <p class="card-title my-3">
+                                        <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"container"</span><span class="gray">&gt;</span><br>
+                                          ... <br>
+                                        <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span>
+                                      </p>
+                                    </div>
+                                </div>
+                            </div>
+              
+                          </div>
+                      </div>
+                      
+                      <!-- Responsive Container -->
+
+                      <div class="container">
+                        <div class="card mt-3">
+                          <div class="card-header">
+                             <h3 class="card-title text-center my-2">Responsive containers</h3>
+                          </div>
+                          <div class="card-body">
+                        
+                              <p class="card-text">
+                                Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached, 
+                                after which we apply max-widths for each of the higher breakpoints. For example, .container-sm is 100% wide to start 
+                                until the sm breakpoint is reached, where it will scale up with md, lg, xl, and xxl.
+                              </p>
+                              <div class="text-center">
+                                <button id="showContainerCode" class="btn btn-outline-success py-2 px-5">Show Code</button>
+                              </div>
+                              <p id="containerCode" class="codeText p-3 mt-2">
+                                <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"container-sm"</span><span class="gray">&gt;</span>100% wide until small breakpoint<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"container-md"</span><span class="gray">&gt;</span>100% wide until medium breakpoint<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"container-lg"</span><span class="gray">&gt;</span>100% wide until large breakpoint<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"container-xl"</span><span class="gray">&gt;</span>100% wide until extra large breakpoint<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"container-xxl"</span><span class="gray">&gt;</span>100% wide until extra extra large breakpoint<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+                      <a id="gridLink"></a>
+                    </div>
+                      
+                    <!-- GRID -->
+
+                    <div class="container-fluid dark-background mt-4 pt-4 pb-4">
+                      <h2 class="mt-3 text-center">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.75 3C3.88235 3 3 3.88235 3 6.75C3 9.61765 3.88235 10.5 6.75 10.5C9.61765 10.5 10.5 9.61765 10.5 6.75C10.5 3.88235 9.61765 3 6.75 3Z" stroke="#12802d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6.75 13.5C3.88235 13.5 3 14.3824 3 17.25C3 20.1176 3.88235 21 6.75 21C9.61765 21 10.5 20.1176 10.5 17.25C10.5 14.3824 9.61765 13.5 6.75 13.5Z" stroke="#12802d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.25 13.5C14.3824 13.5 13.5 14.3824 13.5 17.25C13.5 20.1176 14.3824 21 17.25 21C20.1176 21 21 20.1176 21 17.25C21 14.3824 20.1176 13.5 17.25 13.5Z" stroke="#12802d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.25 3C14.3824 3 13.5 3.88235 13.5 6.75C13.5 9.61765 14.3824 10.5 17.25 10.5C20.1176 10.5 21 9.61765 21 6.75C21 3.88235 20.1176 3 17.25 3Z" stroke="#12802d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        Grid</h2>
+                        <p class="px-3 mt-4">
+                          Bootstrap 5 <b>grid</b> is a responsive grid system used in web development. 
+                          It is a flexible and powerful system that allows you to create a wide variety of layouts 
+                          for websites, regardless of the size of the screen or device. The Bootstrap 5 grid is based on a 
+                          <b>12-column layout</b>, with columns that can be combined and arranged in different ways to create different 
+                          layouts. The grid system is designed to be mobile-first, meaning that the layout is optimized for small 
+                          screens first and then adapts to larger screens.
+                        </p>
+                        <h3 class="px-3">Grid Options</h3>
+                        <p class="px-3">Bootstrap's grid system can adapt across all six default breakpoints, 
+                          and any breakpoints you customize. The six default grid tiers are as follows:</p>
+                        <ul class="lightgray px-5">
+                          <li>Extra small (xs)</li>
+                          <li>Small (sm)</li>
+                          <li>Medium (md)</li>
+                          <li>Large (lg)</li>
+                          <li>Extra large (xl)</li>
+                          <li>Extra extra large (xl)</li>
+                        </ul>
+                        <h3 class="px-3">Grid Example</h3>
+                        <div class="card mt-3 mx-3">
+                          <div class="card-header">
+                            <div class="container text-center">
+                              <div class="row">
+                                <div class="col bg-success m-1 py-1">
+                                  1 of 2
+                                </div>
+                                <div class="col bg-success m-1 py-1">
+                                  2 of 2
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col bg-success m-1 py-1">
+                                  1 of 3
+                                </div>
+                                <div class="col bg-success m-1 py-1">
+                                  2 of 3
+                                </div>
+                                <div class="col bg-success m-1 py-1">
+                                  3 of 3
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">
+                              Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached, 
+                              after which we apply max-widths for each of the higher breakpoints. For example, .container-sm is 100% wide to start 
+                              until the sm breakpoint is reached, where it will scale up with md, lg, xl, and xxl.
+                            </p>
+                            <div class="text-center">
+                              <button id="showGridCode" class="btn btn-outline-success py-2 px-5">Show Code</button>
+                            </div>
+                            <p id="gridCode" class="codeText p-3 mt-2">
+                              <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"container text-center"</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"row"</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"col"</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 of 2 <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"col"</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 of 2 <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"row"</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"col"</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 of 3 <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"col"</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 of 3 <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"col"</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 of 3 <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                              &nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                              <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                            </p>
+                          </div>
+                      </div>
+                      <a id="columnsLink"></a>
+                    </div>
+
+                    <!--COLUMNS-->
+
+                    <div class="container-fluid dark-background mt-4 pt-4 pb-4">
+                      <h2 class="mt-3 text-center">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.87868 2.87868C3.44129 2.31607 4.20435 2 5 2H19C19.7957 2 20.5587 2.31607 21.1213 2.87868C21.6839 3.44129 22 4.20435 22 5V19C22 19.7957 21.6839 20.5587 21.1213 21.1213C20.5587 21.6839 19.7957 22 19 22H5C4.20435 22 3.44129 21.6839 2.87868 21.1213C2.31607 20.5587 2 19.7957 2 19V5C2 4.20435 2.31607 3.44129 2.87868 2.87868ZM13 20H19C19.2652 20 19.5196 19.8946 19.7071 19.7071C19.8946 19.5196 20 19.2652 20 19V5C20 4.73478 19.8946 4.48043 19.7071 4.29289C19.5196 4.10536 19.2652 4 19 4H13V20ZM11 4V20H5C4.73478 20 4.48043 19.8946 4.29289 19.7071C4.10536 19.5196 4 19.2652 4 19V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H11Z" fill="#12802d"></path> </g></svg>
+                        Columns</h2>
+                        <p class="px-3 mt-4">
+                          <b>Columns</b> are used to create the layout of a web page and are arranged within rows. 
+                          Bootstrap 5 provides a 12-column grid system, meaning that each row is divided into 12 equal-width 
+                          columns. This allows for a high degree of flexibility in laying out content on a page, as columns 
+                          can be combined and nested to create complex layouts.
+                        </p>
+                       <h3 class="px-3">Example of Bootstrap 5 Columns</h3>
+                        <div class="card mt-3 mx-3">
+                          <div class="card-header">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-9 bg-success m-1 py-1">.col-9</div>
+                                <div class="col-4 bg-success m-1 py-1">.col-4<br></div>
+                                <div class="col-6 bg-success m-1 py-1">.col-6<br></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Simple example of column wrapping</h5>
+                            <p class="card-text">
+                              If more than 12 columns are placed within a single row, each group of extra columns will, 
+                              as one unit, wrap onto a new line.
+                            </p>
+                            <div class="text-center">
+                              <button id="showColumnCode" class="btn btn-outline-success py-2 px-5">Show Code</button>
+                            </div>
+                            <p id="columnCode" class="codeText p-3 mt-2">
+                              <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"col-9 bg-success m-1 py-1"</span><span class="gray">&gt;</span>.col-9<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                              <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"col-4 bg-success m-1 py-1"</span><span class="gray">&gt;</span>.col-4<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                              <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"col-6 bg-success m-1 py-1"</span><span class="gray">&gt;</span>.col-6<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                            </p>
+                          </div>
+                      </div>
+                      <a id="utilitiesLink"></a>
+                    </div>
+
+                    <!--UTILITIES-->
+
+                    <div class="container-fluid dark-background mt-4 pt-4 pb-4">
+                      <h2 class="mt-3 text-center">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 6C3 3.79086 4.79086 2 7 2H17C19.2091 2 21 3.79086 21 6C21 8.20914 19.2091 10 17 10H7C4.79086 10 3 8.20914 3 6Z" stroke="#12802d" stroke-width="2"></path> <path d="M3 16C3 14.8954 3.89543 14 5 14H8C9.10457 14 10 14.8954 10 16V19C10 20.1046 9.10457 21 8 21H5C3.89543 21 3 20.1046 3 19V16Z" stroke="#12802d" stroke-width="2"></path> <path d="M14 17.5C14 15.567 15.567 14 17.5 14C19.433 14 21 15.567 21 17.5C21 19.433 19.433 21 17.5 21C15.567 21 14 19.433 14 17.5Z" stroke="#12802d" stroke-width="2"></path> </g></svg>
+                      Layout Utilities</h2>
+                      <p class="px-3 mt-4">
+                        Bootstrap 5 utilities are a set of classes that can be used to quickly and easily style HTML elements without the need for custom CSS. 
+                        These classes provide a wide range of functionalities, including spacing, typography, borders, colors, and display.<br>
+                      </p>
+                      <h3 class="px-3">Display</h3>
+                      <p class="px-3">
+                        Bootstrap 5 provides several <b>display utility</b> classes that can be used to control the visibility of HTML elements on different screen sizes.
+                        The display classes are based on the CSS display property and can be used to show or hide elements on specific screen sizes.
+                      </p>
+                      <h3 class="px-3">Flexbox</h3>
+                      <p class="px-3">
+                        <b>Flexbox</b> is a layout mode provided by CSS3 that allows you to create flexible and responsive layouts. In Bootstrap, 
+                        flexbox is used extensively to create responsive and dynamic layouts that adapt to different screen sizes and devices.
+                        
+                      </p>
+                      <h3 class="px-3">Margin and padding</h3>
+                      <p class="px-3">
+                        Bootstrap provides <b>margin</b> and <b>padding</b> spacing utilities that allow you to adjust the spacing and size of elements and components. These utilities use a six-level scale based on 
+                        a default value of 1rem for the $spacer variable. You can set values for all viewports (such as using .me-3 to apply a margin-right of 1rem in left-to-right languages), or use responsive variants to target specific viewports (such as using .me-md-3 to apply a margin-right of 1rem in left-to-right languages starting at the medium breakpoint).
+                      </p>
+                    </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light mt-auto">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h3 class="mb-3"><b>Bootstrap 5</b></h3>
+            <p>
+              This project was made for faculty purposes.
+            </p>
+          </div>
+    
+          <div class="col-md-8">
+            <h3 class="mb-3"><b>Links</b></h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html" class="text-decoration-none">Home</a></li>
+              <li class="mb-2"><a href="about-us.html" class="text-decoration-none">About us</a></li>
+              <li class="mb-2"><a href="about-bootstrap.html" class="text-decoration-none">About Bootstrap 5</a></li>
+              <li class="mb-2"><a href="bootstrap-components.html" class="text-decoration-none">Bootstrap 5 Components</a></li>
+              <li class="mb-2"><a href="bootstrap-layouts.html" class="text-decoration-none">Bootstrap 5 Layouts</a></li>
+              <li class="mb-2"><a href="contact.html" class="text-decoration-none">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-success text-center py-3">
+        © 2023 WBT2022-27-28-30
+      </div>
+    </footer>
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/layouts.js"></script>
+</body>
+</html>

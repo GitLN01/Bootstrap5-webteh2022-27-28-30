@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="On this page, you can contact the authors of this website using the given form.">
+    <title>WBT2022-27-28-30 Bootstrap 5</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100 image">
+    
+    <header class="sticky-top">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z" fill="#d3d3d3"/>
+                </svg>&nbsp;&nbsp;Bootstrap 5</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about-us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about-bootstrap.html">About Bootstrap 5</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./bootstrap-components.html">Bootstrap 5 Components</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./bootstrap-layouts.html">Bootstrap 5 Layouts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <!--FORM-->
+    <main>
+      <div class="row">
+        <div class="col-1 col-sm-1 col-md-1 col-lg-3">
+        </div>
+            <div class="col-10 col-sm-10 col-md-10 col-lg-6">
+              <div class="container mt-5 d-flex justify-content-center pb-5">
+                <form id="form" method="POST" action="formsending.php">
+                    <h1 class="text-center" style="color:white">Contact Us</h1>
+                    <div class="mb-3 ">
+                      <label for="nameInput" class="form-label" style="color:white;">Your name</label>
+                      <input type="text" name="name" class="form-control" id="nameInput" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3 ">
+                      <label for="emailInput" class="form-label" style="color:white;">Your Email address</label>
+                      <input id="email" name="email" type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" required>
+                      <div id="emailHelp" class="form-text" style="color:white;">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3 ">
+                      <label for="messageInput" class="form-label" style="color:white;">Your Message</label>
+                      <textarea class="form-control" name="message" id="messageInput" rows="3"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-outline-success form-control" value="Submit">
+                </form>
+               </div>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-3">
+            </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light mt-auto">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h3 class="mb-3"><b>Bootstrap 5</b></h3>
+            <p>
+              This project was made for faculty purposes.
+            </p>
+          </div>
+    
+          <div class="col-md-8">
+            <h3 class="mb-3"><b>Links</b></h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html" class="text-decoration-none">Home</a></li>
+              <li class="mb-2"><a href="about-us.html" class="text-decoration-none">About us</a></li>
+              <li class="mb-2"><a href="about-bootstrap.html" class="text-decoration-none">About Bootstrap 5</a></li>
+              <li class="mb-2"><a href="bootstrap-components.html" class="text-decoration-none">Bootstrap 5 Components</a></li>
+              <li class="mb-2"><a href="bootstrap-layouts.html" class="text-decoration-none">Bootstrap 5 Layouts</a></li>
+              <li class="mb-2"><a href="contact.html" class="text-decoration-none">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-success text-center py-3">
+        © 2023 WBT2022-27-28-30
+      </div>
+    </footer>
+    
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

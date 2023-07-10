@@ -1,0 +1,39 @@
+/* Card hover effect */
+
+.cardHover 
+{
+    transition: 0.3s;
+}
+
+.cardHover:hover 
+{
+    transform: scale(1.06);
+    z-index: 1;
+}
+
+/*Colors for showcased codes under the buttons "Show code" */
+
+.blue 
+{
+    color: #109af7;
+}
+
+.lightblue 
+{
+    color: #4FB8FE;
+}
+
+.orange 
+{
+    color: #CE9178;
+}
+
+.gray 
+{
+    color: gray;
+}
+
+.lightgray 
+{
+    color: lightgray;
+}

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page shows examples of Bootstrap 5 components, along with their code, that can be easily used and adapted
+    to your personal website.">
+    <title>WBT2022-27-28-30 Bootstrap 5</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-components.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/external.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    
+  <!--NAVBAR-->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z" fill="#d3d3d3"/>
+                </svg>&nbsp;&nbsp;Bootstrap 5</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about-us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about-bootstrap.html">About Bootstrap 5</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./bootstrap-components.html">Bootstrap 5 Components</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./bootstrap-layouts.html">Bootstrap 5 Layouts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+      <!-- SIDEBAR --> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 sidebar" style="background-color: #333333;">
+                  <div class="position-fixed" style="width:inherit;">
+                      <div class="container mt-4 mb-2">
+                        <h2 class="text-center p-1 d-none d-sm-none d-lg-inline">Content</h2>
+                      </div>
+                      <ul class="nav nav-pills flex-column">
+                        <li class="nav-item py-1">
+                          <a class="nav-link" href="#buttonsLink">
+                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#d3d3d3"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M0 1.5A1.5 1.5 0 011.5 0h17A1.5 1.5 0 0120 1.5v6A1.5 1.5 0 0118.5 9h-5.889a1.5 1.5 0 01-1.5-1.5V5.111a1.111 1.111 0 10-2.222 0V7.5a1.5 1.5 0 01-1.5 1.5H1.5A1.5 1.5 0 010 7.5v-6z" fill="#d3d3d3"></path><path d="M7 5a3 3 0 016 0v4.384a.5.5 0 00.356.479l2.695.808a2.5 2.5 0 011.756 2.748l-.633 4.435A2.5 2.5 0 0114.699 20H6.96a2.5 2.5 0 01-2.27-1.452l-2.06-4.464a2.417 2.417 0 01-.106-1.777c.21-.607.719-1.16 1.516-1.273 1.035-.148 2.016.191 2.961.82V5zm3-1a1 1 0 00-1 1v7.793c0 1.39-1.609 1.921-2.527 1.16-.947-.784-1.59-.987-2.069-.948a.486.486 0 00.042.241l2.06 4.463A.5.5 0 006.96 18h7.74a.5.5 0 00.494-.43l.633-4.434a.5.5 0 00-.35-.55l-2.695-.808A2.5 2.5 0 0111 9.384V5a1 1 0 00-1-1z" fill="#d3d3d3"></path></g></svg>
+                            &nbsp;<span class="d-none d-md-none d-lg-inline">Buttons</span></a>
+                        </li>
+                       
+                        <li class="nav-item py-1">
+                          <a class="nav-link" href="#cardsLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g opacity="0.4"> <path d="M2 8.50488H22" stroke="#d3d3d3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6 16.5049H8" stroke="#d3d3d3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M10.5 16.5049H14.5" stroke="#d3d3d3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g> <path d="M6.44 3.50488H17.55C21.11 3.50488 22 4.38488 22 7.89488V16.1049C22 19.6149 21.11 20.4949 17.56 20.4949H6.44C2.89 20.5049 2 19.6249 2 16.1149V7.89488C2 4.38488 2.89 3.50488 6.44 3.50488Z" stroke="#d3d3d3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            &nbsp;<span class="d-none d-md-none d-lg-inline">Cards</span></a>
+                        </li>
+                       
+                        <li class="nav-item py-1">
+                          <a class="nav-link" href="#listGroupLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 8H19M8 12H19M8 16H19M5 8V8.00999M5 12V12.01M5 16V16.01" stroke="#d3d3d3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            &nbsp;<span class="d-none d-md-none d-lg-inline">List Group</span></a>
+                        </li>
+                        <li class="nav-item py-1">
+                          <a class="nav-link" href="#modalLink">
+                            <svg width="20" height="20" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#d3d3d3" d="M3 6h2v1h-2v-1z"></path> <path fill="#d3d3d3" d="M6 6h7v1h-7v-1z"></path> <path fill="#d3d3d3" d="M3 8h2v1h-2v-1z"></path> <path fill="#d3d3d3" d="M6 8h7v1h-7v-1z"></path> <path fill="#d3d3d3" d="M3 10h2v1h-2v-1z"></path> <path fill="#d3d3d3" d="M6 10h7v1h-7v-1z"></path> <path fill="#d3d3d3" d="M0 1v14h16v-14h-16zM15 14h-14v-10h14v10zM15 3h-1v-1h1v1z"></path> </g></svg>
+                            &nbsp;<span class="d-none d-md-none d-lg-inline">Modal</span></a>
+                        </li>
+                        <li class="nav-item py-1">
+                          <a class="nav-link" href="#navbarLink">
+                            <svg width="20" height="20" fill="#d3d3d3" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect id="Icons" x="-128" y="-192" width="1280" height="800" style="fill:none;"></rect> <g id="Icons1" serif:id="Icons"> <g id="Strike"> </g> <g id="H1"> </g> <g id="H2"> </g> <g id="H3"> </g> <g id="list-ul"> </g> <g id="hamburger-1"> </g> <g id="hamburger-2"> </g> <g id="list-ol"> </g> <g id="list-task"> </g> <g id="trash"> </g> <g id="vertical-menu"> </g> <g id="horizontal-menu"> </g> <g id="sidebar-2"> <path d="M50.008,56.043l-35.989,0c-3.309,0 -5.995,-2.686 -5.995,-5.995l0,-36.011c0,-3.308 2.686,-5.994 5.995,-5.995l35.989,0c3.309,0.001 5.995,2.687 5.995,5.995l0,36.011c0,3.309 -2.686,5.995 -5.995,5.995Zm-25.984,-4.001l0,-39.999l-9.012,0c-1.65,0 -2.989,1.339 -2.989,2.989l0,34.021c0,1.65 1.339,2.989 2.989,2.989l9.012,0Zm24.991,-39.999l-20.991,0l0,39.999l20.991,0c1.65,0 2.989,-1.339 2.989,-2.989l0,-34.021c0,-1.65 -1.339,-2.989 -2.989,-2.989Z"></path> <rect x="14.611" y="16.042" width="6.569" height="2" style="fill-rule:nonzero;"></rect> <rect x="14.611" y="24.042" width="6.569" height="2" style="fill-rule:nonzero;"></rect> <rect x="14.611" y="20.042" width="6.569" height="2" style="fill-rule:nonzero;"></rect> </g> <g id="Pen"> </g> <g id="Pen1" serif:id="Pen"> </g> <g id="clock"> </g> <g id="external-link"> </g> <g id="hr"> </g> <g id="info"> </g> <g id="warning"> </g> <g id="plus-circle"> </g> <g id="minus-circle"> </g> <g id="vue"> </g> <g id="cog"> </g> <g id="logo"> </g> <g id="radio-check"> </g> <g id="eye-slash"> </g> <g id="eye"> </g> <g id="toggle-off"> </g> <g id="shredder"> </g> <g id="spinner--loading--dots-" serif:id="spinner [loading, dots]"> </g> <g id="react"> </g> <g id="check-selected"> </g> <g id="turn-off"> </g> <g id="code-block"> </g> <g id="user"> </g> <g id="coffee-bean"> </g> <g id="coffee-beans"> <g id="coffee-bean1" serif:id="coffee-bean"> </g> </g> <g id="coffee-bean-filled"> </g> <g id="coffee-beans-filled"> <g id="coffee-bean2" serif:id="coffee-bean"> </g> </g> <g id="clipboard"> </g> <g id="clipboard-paste"> </g> <g id="clipboard-copy"> </g> <g id="Layer1"> </g> </g> </g></svg>
+                            &nbsp;<span class="d-none d-md-none d-lg-inline">Navbar</span></a>
+                        </li>
+                        <li class="nav-item py-1">
+                          <a class="nav-link" href="#progressBarLink">
+                            <svg width="20" height="20" fill="#d3d3d3" height="200px" width="200px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M28,12H14H4c-2.2,0-4,1.8-4,4s1.8,4,4,4h10h14c2.2,0,4-1.8,4-4S30.2,12,28,12z M4,18c-1.1,0-2-0.9-2-2s0.9-2,2-2h10 c1.1,0,2,0.9,2,2s-0.9,2-2,2H4z"></path> </g></svg>
+                            &nbsp;<span class="d-none d-md-none d-lg-inline">Progress Bar</span></a>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+
+                <!-- COMPONENTS -->
+                <div class="col-10 mb-5">
+                    <div class="container-fluid mt-3">
+                        <h1 class="text-center">Bootstrap 5 Components</h1>
+                        <p class="mt-4 px-4">Bootstrap 5 provides a set of pre-built UI components that can be easily customized and integrated into your project.
+                            By using these components and customizing them to fit your needs, you can build responsive and professional-looking websites and web applications quickly and easily. <br><br>
+                            In the examples below, we will show some types of components that can be used and easily integrated into every website that uses Bootstrap 5.
+                            <a class="mt-3" id="buttonsLink"></a>
+                        </p>
+
+                        <!-- BUTTONS -->
+                        <div class="container-fluid dark-background mt-4 pt-4 pb-4">
+                          <h2 class="text-center mt-3">
+                            <svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#12802d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M0 1.5A1.5 1.5 0 011.5 0h17A1.5 1.5 0 0120 1.5v6A1.5 1.5 0 0118.5 9h-5.889a1.5 1.5 0 01-1.5-1.5V5.111a1.111 1.111 0 10-2.222 0V7.5a1.5 1.5 0 01-1.5 1.5H1.5A1.5 1.5 0 010 7.5v-6z" fill="#12802d"></path><path d="M7 5a3 3 0 016 0v4.384a.5.5 0 00.356.479l2.695.808a2.5 2.5 0 011.756 2.748l-.633 4.435A2.5 2.5 0 0114.699 20H6.96a2.5 2.5 0 01-2.27-1.452l-2.06-4.464a2.417 2.417 0 01-.106-1.777c.21-.607.719-1.16 1.516-1.273 1.035-.148 2.016.191 2.961.82V5zm3-1a1 1 0 00-1 1v7.793c0 1.39-1.609 1.921-2.527 1.16-.947-.784-1.59-.987-2.069-.948a.486.486 0 00.042.241l2.06 4.463A.5.5 0 006.96 18h7.74a.5.5 0 00.494-.43l.633-4.434a.5.5 0 00-.35-.55l-2.695-.808A2.5 2.5 0 0111 9.384V5a1 1 0 00-1-1z" fill="#12802d"></path></g></svg>
+                            &nbsp;Buttons</h2>
+                          <p class="px-3">Bootstrap 5 provides a wide range of button styles that can be used to create custom buttons for your website or web application.
+                              These buttons can be easily added just by adding button class to the HTML elements. <br> <br> Here are some of the key button styles available in Bootstrap 5:</p>
+                          <div class="card mt-3 mx-3">
+                              <div class="card-header py-3">
+                                  <button type="button" class="btn btn-primary">btn-primary</button>
+                                  <button type="button" class="btn btn-secondary">btn-secondary</button>
+                                  <button type="button" class="btn btn-info">btn-info</button>
+                                  <button type="button" class="btn btn-success">btn-success</button>
+                                  <button type="button" class="btn btn-light">btn-light</button>
+                                  <button type="button" class="btn btn-dark">btn-dark</button>
+                                  <button type="button" class="btn btn-danger">btn-danger</button>
+                                  <button type="button" class="btn btn-warning">btn-warning</button>
+                                  <button type="button" class="btn btn-link">btn-link</button>
+                              </div>
+                              
+                              <div class="card-body">
+                                  <h5 class="card-title">Buttons in Bootstrap 5</h5>
+                                  <p class="card-text">In this example we have shown you some types of buttons that can be called using <b>btn</b> class.
+                                  Additionally, you can add color to the button by calling one of the classes presented in the example above.</p>
+                                  <a class="mt-3" id="outlineButtonsLink"></a>
+                                  <div class="text-center">
+                                      <button id="showButtonCode" class="btn btn-outline-success px-5 py-2">Show Code</button>
+                                  </div>
+                                  
+                                  <p id="buttonCode" class="codeText p-3 mt-2">
+                                      <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-primary"</span><span class="gray">&gt;</span>btn-primary<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                      <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-secondary"</span><span class="gray">&gt;</span>btn-secondary<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                      <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-info"</span><span class="gray">&gt;</span>btn-info<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                      <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-success"</span><span class="gray">&gt;</span>btn-success<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                      <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-light"</span><span class="gray">&gt;</span>btn-light<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                      <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-dark"</span><span class="gray">&gt;</span>btn-dark<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                      <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-danger"</span><span class="gray">&gt;</span>btn-danger<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                      <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-warning"</span><span class="gray">&gt;</span>btn-warning<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                      <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-link"</span><span class="gray">&gt;</span>btn-link<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                  </p>
+                              </div>
+                          </div>
+                          
+                          <!-- OUTLINE BUTTONS -->
+                          <h3 class="mt-5 text-center">
+                            <svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#12802d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="0" fill="none" width="20" height="20"></rect> <g> <path d="M17 5H3c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm1 7c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h14c.6 0 1 .4 1 1v5z"></path> </g> </g></svg>
+                            &nbsp;Outline Buttons</h3>
+                          <div class="card mt-3 mx-3">
+                              <div class="card-header py-3">
+                                  <button type="button" class="btn btn-outline-primary">Primary</button>
+                                  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                  <button type="button" class="btn btn-outline-info">Info</button>
+                                  <button type="button" class="btn btn-outline-success">Success</button>
+                                  <button type="button" class="btn btn-outline-light">Light</button>
+                                  <button type="button" class="btn btn-outline-dark">Dark</button>
+                                  <button type="button" class="btn btn-outline-danger">Danger</button>
+                                  <button type="button" class="btn btn-outline-warning">Warning</button>
+                                  <button type="button" class="btn btn-link">btn-link</button>
+                              </div>
+                              <div class="card-body">
+                                  <h5 class="card-title">Outline Buttons in Bootstrap 5</h5>
+                                  <p class="card-text">Bootstrap 5 provides several outline button styles that can be used to create buttons with a transparent background and a solid border.
+                                  </p>
+                                  <div class="text-center">
+                                    <a id="cardsLink"></a>
+                                    <button id="showOutlineButtonCode" class="btn btn-outline-success py-2 px-5">Show Code</button>
+                                  </div>
+                                  <p id="outlineButtonCode" class="codeText p-3 mt-2">
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-outline-primary"</span><span class="gray">&gt;</span>Primary<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-outline-secondary"</span><span class="gray">&gt;</span>Secondary<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-outline-info"</span><span class="gray">&gt;</span>Info<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-outline-success"</span><span class="gray">&gt;</span>Success<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-outline-light"</span><span class="gray">&gt;</span>Light<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-outline-dark"</span><span class="gray">&gt;</span>Dark<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-outline-danger"</span><span class="gray">&gt;</span>Danger<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-outline-warning"</span><span class="gray">&gt;</span>Warning<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-outline-link"</span><span class="gray">&gt;</span>Link<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                  </p>
+                              </div>
+                          </div>
+                        </div>
+
+                    <!-- CARDS -->
+                      <div class="container-fluid dark-background mt-4 pt-4 pb-4">
+                        <h2 class="text-center mt-3">
+                          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g opacity="0.4"> <path d="M2 8.50488H22" stroke="#12802d" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6 16.5049H8" stroke="#12802d" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M10.5 16.5049H14.5" stroke="#12802d" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g> <path d="M6.44 3.50488H17.55C21.11 3.50488 22 4.38488 22 7.89488V16.1049C22 19.6149 21.11 20.4949 17.56 20.4949H6.44C2.89 20.5049 2 19.6249 2 16.1149V7.89488C2 4.38488 2.89 3.50488 6.44 3.50488Z" stroke="#12802d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                          &nbsp;Cards</h2>
+
+                        <p class="px-3">Cards are flexible and responsive content container that allows you to display different types of content such as text, images, and links in a structured way. Cards provide an easy way to organize and present information that can be used to create simple and complex layouts.</p>
+
+                        <div class="card mt-3 mx-3">
+                            <div class="card-header">
+                                <div class="card mx-auto card-example">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                      <p class="card-text">This is an example of a simple card, that contains only body without header, footer or image.</p>
+                                      <a href="#" class="card-link">Card link</a>
+                                      <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cards in Bootstrap 5</h5>
+                                <p class="card-text">Cards with images in Bootstrap 5 are a great way to display visually appealing content on a webpage. To create a card, you need to
+                                    add class card to div element. Additionally, you can add header, footer and images to cards using <b>card-header</b>, <b>card-footer</b> and <b>card-img</b> classes.
+                                </p>
+                                <a id="cardsImagesLink"></a>
+                                <div class="text-center">
+                                  <button id="showCardCode" class="btn btn-outline-success py-2 px-5">Show Code</button>
+                                </div>
+                                <p id="cardCode" class="codeText p-3 mt-2">
+                                  <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"card mx-auto"</span> <span class="lightblue">style</span>=<span class="orange">"width: 18rem;"</span><span class="gray">&gt;</span><br>
+                                  <!--&emsp;&emsp;-->  &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"card-body"</span><span class="gray">&gt;</span><br>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">h5</span> <span class="lightblue">class</span>=<span class="orange">"card-title"</span><span class="gray">&gt;</span>Card title<span class="gray">&lt;/</span><span class="blue">h5</span><span class="gray">&gt;</span><br>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">h6</span> <span class="lightblue">class</span>=<span class="orange">"card-subtitle mb-2 text-muted"</span><span class="gray">&gt;</span>Card subtitle<span class="gray">&lt;/</span><span class="blue">h6</span><span class="gray">&gt;</span><br>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">p</span> <span class="lightblue">class</span>=<span class="orange">"card-text"</span><span class="gray">&gt;</span>This is an example of a simple card, that contains only body without header, footer or image.<span class="gray">&lt;/</span><span class="blue">p</span><span class="gray">&gt;</span><br>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">a</span> <span class="lightblue">href</span>=<span class="orange">"#"</span> <span class="lightblue">class</span>=<span class="orange">"card-link"</span><span class="gray">&gt;</span>Card link<span class="gray">&lt;/</span><span class="blue">a</span><span class="gray">&gt;</span><br>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">a</span> <span class="lightblue">href</span>=<span class="orange">"#"</span> <span class="lightblue">class</span>=<span class="orange">"card-link"</span>&gt;Another link<span class="gray">&lt;/</span><span class="blue">a</span><span class="gray">&gt;</span><br>
+                                      &nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                      <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CARDS WITH IMAGES -->
+
+                        <h3 class="mt-5 text-center">
+                          <svg width="40" height="40" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> </defs> <title></title> <g data-name="id card" id="id_card"> <rect class="cls-1" height="32" id="wrapper" width="32" style="fill:none;"></rect> <path class="cls-2" style="fill:#12802d;" d="M23.92,30.16H8.08a2,2,0,0,1-2-2V3.84a2,2,0,0,1,2-2H23.92a2,2,0,0,1,2,2V28.16A2,2,0,0,1,23.92,30.16Zm0-2v0ZM8.08,3.84V28.16H23.92V3.84Z"></path> <rect class="cls-3" style="fill:#12802d;" height="10.34" rx="1" ry="1" width="17.84" x="7.08" y="18.82"></rect> <path class="cls-2" style="fill:#12802d;" d="M23.92,30.16H8.08a2,2,0,0,1-2-2V19.82a2,2,0,0,1,2-2H23.92a2,2,0,0,1,2,2v8.34A2,2,0,0,1,23.92,30.16Zm0-2v0Zm0-8.34H8.08v8.34H23.92Z"></path> <path class="cls-2" style="fill:#12802d;" d="M20.15,26.55h-8.3a1,1,0,1,1,0-2h8.3a1,1,0,0,1,0,2Z"></path> <path class="cls-2" style="fill:#12802d;" d="M18.07,23.5H13.93a1,1,0,0,1,0-2h4.14a1,1,0,0,1,0,2Z"></path> <circle class="cls-3" style="fill:#12802d;" cx="16" cy="10.34" r="3.09"></circle> <path class="cls-2" style="fill:#12802d;" d="M16,14.44a4.1,4.1,0,1,1,4.09-4.1A4.1,4.1,0,0,1,16,14.44Zm0-6.19a2.1,2.1,0,1,0,2.09,2.09A2.1,2.1,0,0,0,16,8.25Z"></path> <path class="cls-2" style="fill:#12802d;" d="M22.38,18.82h-2a4.38,4.38,0,1,0-8.76,0h-2a6.38,6.38,0,1,1,12.76,0Z"></path> </g> </g></svg>
+                          &nbsp;Cards with images</h3>
+
+                        <div class="card mt-3 mx-3">
+                            <div class="card-header">
+                                <div class="card mx-auto card-example">
+                                    <img src="img/Bootstrap_logo.png" class="card-img-top p-2" alt="Bootstrap 5 Logo">
+                                    <div class="card-body">
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Cards with images in Bootstrap 5</h5>
+                                <p class="card-text">Card and card-body classes have some basic styling, but you may want to customize them further. Additionally, you can add the <b>card-img-top</b> class to the img element to position the image at the top of the card.</p>
+                                <a id="cardsHeaderLink"></a>
+                                <div class="text-center">
+                                  <button id="showImageCardCode" class="btn btn-outline-success py-2 px-5">Show Code</button>
+                                </div>
+                                <p id="imageCardCode" class="codeText p-3 mt-2">
+                                  <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"card mx-auto"</span><span class="gray">&gt;</span><br>
+                                  &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">img</span> <span class="lightblue">src</span>=<span class="orange">"img/Bootstrap_logo.png"</span> <span class="lightblue">class</span>=<span class="orange">"card-img-top p-2"</span> <span class="lightblue">alt</span>=<span class="orange">"..."</span><span class="gray">&gt;</span><br>
+                                  &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"card-body"</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;  <span class="gray">&lt;</span><span class="blue">p</span> <span class="lightblue">class</span>=<span class="orange">"card-text"</span><span class="gray">&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="gray">&lt;/</span><span class="blue">p</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp; <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                  <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CARDS WITH HEADER AND FOOTER -->
+
+                        <h3 class="mt-5 text-center">
+                          <svg width="40" height="40" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#12802d" class="bi bi-card-heading"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"></path> <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"></path> </g></svg>
+                          &nbsp;Cards with header and footer</h3>
+
+                        <div class="card mt-3 mx-3">
+                            <div class="card-header">
+                                <div class="card mx-auto text-center card-example">
+                                    <div class="card-header">
+                                      Card Header
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card Title</h5>
+                                      <p class="card-text">
+                                        This is an example of a simple card, that contains body with header and footer. 
+                                      </p>
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                      Card Footer
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cards with images in Bootstrap 5</h5>
+                                <p class="card-text">To create a card with <b>header and footer</b>, we need to create div element with card class 
+                                  first. Inside that div element, we need to create three more divs for different elements of a card component: 
+                                  header, body and footer. To create card headers, we need to create a div with class card-header. For card footer, 
+                                  div element must contain class card-footer. Those two divs will be presented separately highlighted from the main 
+                                  card-body text of the card. 
+                                </p>
+                                <div class="text-center">
+                                  <button id="showHeaderCardCode" class="btn btn-outline-success py-2 px-5">Show Code</button>
+                                </div>
+                                <a id="listGroupLink"></a>
+                                <p id="headerCardCode" class="codeText p-3 mt-2">
+                                  
+                                  <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"card text-center"</span><span class="gray">&gt;</span><br>
+                                  &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"card-header"</span><span class="gray">&gt;</span><br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;Card Header<br>
+                                  &nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                  &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"card-body"</span><span class="gray">&gt;</span><br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">h5</span> <span class="lightblue">class</span>=<span class="orange">"card-title"</span><span class="gray">&gt;</span>Card Title<span class="gray">&lt;/</span><span class="blue">h5</span><span class="gray">&gt;</span><br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">p</span> <span class="lightblue">class</span>=<span class="orange">"card-text"</span><span class="gray">&gt;</span>This is an example of card with header and footer. To add header and footer, you need to add card-header and card-footer class to div elements.<span class="gray">&lt;/</span><span class="blue">p</span><span class="gray">&gt;</span><br>
+                                  &nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                  &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"card-footer text-muted"</span><span class="gray">&gt;</span><br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;Card Footer<br>
+                                  &nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                  <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <!--LIST GROUP-->
+
+                        <div class="container-fluid dark-background mt-4 pt-4 pb-4">
+                          <h2 class="text-center mt-3">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 8H19M8 12H19M8 16H19M5 8V8.00999M5 12V12.01M5 16V16.01" stroke="#12802d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            &nbsp;List Group</h2>
+                          <p class="px-3">List-group component which can be used to display lists of items in a flexible and responsive manner. To create a <b>list-group</b>, start with the ul element with the <b>list-group</b> class.
+                              Inside the ul, you can create li elements for each item in the list. You can also add other content elements such as h5 and p for each item's title and description.</p>
+                          <div class="card mt-3 mx-3">
+                              <div class="card-header">
+                                  <div class="list-group">
+                                      <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                                        Active List Group Item
+                                      </button>
+                                      <button type="button" class="list-group-item list-group-item-action">First List Group Item</button>
+                                      <button type="button" class="list-group-item list-group-item-action">Second List Group Item</button>
+                                      <button type="button" class="list-group-item list-group-item-action">Third List Group Item</button>
+                                      <button type="button" class="list-group-item list-group-item-action" disabled>Disabled List Group Item</button>
+                                  </div>
+                              </div>
+                              <div class="card-body">
+                                  <h5 class="card-title">List Group</h5>
+                                  <p class="card-text">List Group consists of multiple button elements grouped inside div element. In order to create List Group, you need to add <b>list-group</b> class inside div element.
+                                  Inside List Group you need to add button elements, which contain <b>list-group-item</b> class.</p>
+                                  <div class="text-center">
+                                    <button id="showListGroupCode" class="btn btn-outline-success py-2 px-5">Show Code</button>
+                                  </div>
+                                  <p id="listGroupCode" class="codeText p-3 mt-2">
+                                    <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"list-group"</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"list-group-item list-group-item-action active"</span> <span class="lightblue">aria-current</span>=<span class="orange">"true"</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Active List Group Item<br>
+                                    &nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"list-group-item list-group-item-action"</span><span class="gray">&gt;</span>First List Group Item<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"list-group-item list-group-item-action"</span><span class="gray">&gt;</span>Second List Group Item<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"list-group-item list-group-item-action"</span><span class="gray">&gt;</span>Third List Group Item<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"list-group-item list-group-item-action"</span> <span class="lightblue">disabled</span><span class="gray">&gt;</span>Disabled List Group Item<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                  </p>
+                                  <a id="modalLink"></a>
+                              </div>
+                          </div>
+                        </div>
+                      
+                    <!-- MODAL -->
+
+                      <div class="container-fluid dark-background mt-4 pt-4 pb-4">
+                        <h2 class="text-center mt-3">
+                          <svg width="40" height="40" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#12802d" d="M3 6h2v1h-2v-1z"></path> <path fill="#12802d" d="M6 6h7v1h-7v-1z"></path> <path fill="#12802d" d="M3 8h2v1h-2v-1z"></path> <path fill="#12802d" d="M6 8h7v1h-7v-1z"></path> <path fill="#12802d" d="M3 10h2v1h-2v-1z"></path> <path fill="#12802d" d="M6 10h7v1h-7v-1z"></path> <path fill="#12802d" d="M0 1v14h16v-14h-16zM15 14h-14v-10h14v10zM15 3h-1v-1h1v1z"></path> </g></svg>
+                          &nbsp;Modal</h2>
+
+                        <p class="px-3">Modals are dialog boxes that are displayed over the current page, providing a way to display content or prompt users for input. Modals require JQuery in order to function properly.
+                        </p>
+
+                        <div class="card mt-3 mx-3">
+                            <div class="card-header">
+                                <div class="text-center">
+                                  <button type="button" class="btn btn-success px-5 py-2" data-bs-toggle="modal" data-bs-target="#modal">
+                                      Modal button
+                                  </button>
+                                </div>
+                                  
+                                <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        This is modal body, which can contain content such as text or input fields.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Modal</h5>
+                                <p class="card-text">In order to create modal, you need to create modal div first with a class <b>modal</b>. This div will contain all the elements that
+                                will be displayed on a modal. Together with class element, modal must also have specific id, which will be used for accessing that specific modal.</p>
+                                <div class="text-center">
+                                    <button id="showModalCode" class="btn btn-outline-success py-2 px-5">Show Code</button>
+                                </div>
+                                <p id="modalCode" class="codeText p-3 mt-2">
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-success px-5 py-2"</span> <span class="lightblue">data-bs-toggle</span>=<span class="orange">"modal"</span> <span class="lightblue">data-bs-target</span>=<span class="orange">"#modal"</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;Modal button<br>
+                                    <span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <br>
+                                    <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"modal fade"</span> <span class="lightblue">id</span>=<span class="orange">"modal"</span> <span class="lightblue">tabindex</span>=<span class="orange">"-1"</span> <span class="lightblue">aria-labelledby</span>=<span class="orange">"modalLabel"</span> <span class="lightblue">aria-hidden</span>=<span class="orange">"true"</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"modal-dialog"</span><span class="lightblue">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"modal-content"</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"modal-header"</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">h1</span> <span class="lightblue">class</span>=<span class="orange">"modal-title fs-5"</span> <span class="lightblue">id</span>=<span class="orange">"modalLabel"</span><span class="gray">&gt;</span>Modal title<span class="gray">&lt;/</span><span class="blue">h1</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn-close"</span> <span class="lightblue">data-bs-dismiss</span>=<span class="orange">"modal"</span> <span class="lightblue">aria-label</span>=<span class="orange">"Close"</span><span class="gray">&gt;&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"modal-body"</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is modal body, which can contain content such as text or input fields. <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"modal-footer"</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-secondary"</span> <span class="lightblue">data-bs-dismiss</span>=<span class="orange">"modal"</span><span class="gray">&gt;</span>Close<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-primary"</span><span class="gray">&gt;</span>Save changes<span class="gray">&lt;/</span>button<span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                    &nbsp;&nbsp;<span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                      <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                </p>
+                                <a id="navbarLink"></a>
+                            </div>
+                        </div>
+                      </div>
+
+                        <!-- NAVBAR -->
+
+                        <div class="container-fluid dark-background mt-4 pt-4 pb-4">
+                          <h2 class="mt-3 text-center">
+                            <svg width="40" height="40" fill="#12802d" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect id="Icons" x="-128" y="-192" width="1280" height="800" style="fill:none;"></rect> <g id="Icons1" serif:id="Icons"> <g id="Strike"> </g> <g id="H1"> </g> <g id="H2"> </g> <g id="H3"> </g> <g id="list-ul"> </g> <g id="hamburger-1"> </g> <g id="hamburger-2"> </g> <g id="list-ol"> </g> <g id="list-task"> </g> <g id="trash"> </g> <g id="vertical-menu"> </g> <g id="horizontal-menu"> </g> <g id="sidebar-2"> <path d="M50.008,56.043l-35.989,0c-3.309,0 -5.995,-2.686 -5.995,-5.995l0,-36.011c0,-3.308 2.686,-5.994 5.995,-5.995l35.989,0c3.309,0.001 5.995,2.687 5.995,5.995l0,36.011c0,3.309 -2.686,5.995 -5.995,5.995Zm-25.984,-4.001l0,-39.999l-9.012,0c-1.65,0 -2.989,1.339 -2.989,2.989l0,34.021c0,1.65 1.339,2.989 2.989,2.989l9.012,0Zm24.991,-39.999l-20.991,0l0,39.999l20.991,0c1.65,0 2.989,-1.339 2.989,-2.989l0,-34.021c0,-1.65 -1.339,-2.989 -2.989,-2.989Z"></path> <rect x="14.611" y="16.042" width="6.569" height="2" style="fill-rule:nonzero;"></rect> <rect x="14.611" y="24.042" width="6.569" height="2" style="fill-rule:nonzero;"></rect> <rect x="14.611" y="20.042" width="6.569" height="2" style="fill-rule:nonzero;"></rect> </g> <g id="Pen"> </g> <g id="Pen1" serif:id="Pen"> </g> <g id="clock"> </g> <g id="external-link"> </g> <g id="hr"> </g> <g id="info"> </g> <g id="warning"> </g> <g id="plus-circle"> </g> <g id="minus-circle"> </g> <g id="vue"> </g> <g id="cog"> </g> <g id="logo"> </g> <g id="radio-check"> </g> <g id="eye-slash"> </g> <g id="eye"> </g> <g id="toggle-off"> </g> <g id="shredder"> </g> <g id="spinner--loading--dots-" serif:id="spinner [loading, dots]"> </g> <g id="react"> </g> <g id="check-selected"> </g> <g id="turn-off"> </g> <g id="code-block"> </g> <g id="user"> </g> <g id="coffee-bean"> </g> <g id="coffee-beans"> <g id="coffee-bean1" serif:id="coffee-bean"> </g> </g> <g id="coffee-bean-filled"> </g> <g id="coffee-beans-filled"> <g id="coffee-bean2" serif:id="coffee-bean"> </g> </g> <g id="clipboard"> </g> <g id="clipboard-paste"> </g> <g id="clipboard-copy"> </g> <g id="Layer1"> </g> </g> </g></svg>
+                            &nbsp;Navbar</h2>
+                          <p class="px-3">Navbar is a navigation bar component provided by the Bootstrap framework. It is used to create a responsive navigation menu that can be easily customized and adjusted to fit different screen sizes and devices.</p>
+                          <div class="card mt-3 mx-3">
+                              <div class="card-header">
+                                <!-- NAVBAR LIGHT EXAMPLE -->
+                                  <nav class="navbar navbar-expand-lg bg-light bg-body-tertiary">
+                                      <div class="container-fluid">
+                                        <a class="navbar-brand" href="#">Navbar</a>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                          <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Link</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Dropdown
+                                              </a>
+                                              <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                              </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link disabled">Disabled</a>
+                                            </li>
+                                          </ul>
+                                          <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                            <button class="btn btn-outline-success" type="submit">Search</button>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </nav>
+                                <!-- NAVBAR DARK EXAMPLE -->
+                                  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                                      <div class="container-fluid">
+                                        <a class="navbar-brand" href="#">Navbar</a>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                          <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Link</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Dropdown
+                                              </a>
+                                              <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                              </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link disabled">Disabled</a>
+                                            </li>
+                                          </ul>
+                                          <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                            <button class="btn btn-outline-success" type="submit">Search</button>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </nav>
+                              </div>
+                              <div class="card-body">
+                                  <h5 class="card-title">Navbar</h5>
+                                  <p class="card-text">To create Navbar, first you need to create div with a class <b>navbar</b>. In div, you must insert <i>ul</i> element, with <i>li</i> elements inside. Each <i>li</i> element contains <b>nav-item</b> class,
+                                      which furthermore contains an element with <b>nav-link</b> class.
+                                  </p>
+                                  <div class="text-center">
+                                    <button id="showNavCode" class="btn btn-outline-success py-2 px-5">Show Code</button>
+                                  </div>
+                                  <p id="navCode" class="codeText p-3 mt-2">
+                                    <span class="gray">&lt;</span><span class="blue">nav</span> <span class="lightblue">class</span>=<span class="orange">"navbar navbar-expand-lg bg-dark navbar-dark"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"container-fluid"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">a</span> <span class="lightblue">class</span>=<span class="orange">"navbar-brand"</span> <span class="lightblue">href</span>=<span class="orange">"#"</span><span class="gray">&gt;</span>Navbar<span class="gray">&lt;/</span><span class="blue">a</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">class</span>=<span class="orange">"navbar-toggler"</span> <span class="lightblue">type</span>=<span class="orange">"button"</span> <span class="lightblue">data-bs-toggle</span>=<span class="orange">"collapse"</span> <span class="lightblue">data-bs-target</span>=<span class="orange">"#navbarSupportedContent"</span> <span class="lightblue">aria-controls</span>=<span class="orange">"navbarSupportedContent"</span> <span class="lightblue">aria-expanded</span>=<span class="orange">"false"</span> <span class="lightblue">aria-label</span>=<span class="orange">"Toggle navigation"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">span</span> <span class="lightblue">class</span>=<span class="orange">"navbar-toggler-icon"</span><span class="gray">&gt;</span><span class="gray">&lt;/</span><span class="blue">span</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"collapse navbar-collapse"</span> <span class="lightblue">id</span>=<span class="orange">"navbarSupportedContent"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">ul</span> <span class="lightblue">class</span>=<span class="orange">"navbar-nav me-auto mb-2 mb-lg-0"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">li</span> <span class="lightblue">class</span>=<span class="orange">"nav-item"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">a</span> <span class="lightblue">class</span>=<span class="orange">"nav-link active"</span> <span class="lightblue">aria-current</span>=<span class="orange">"page"</span> <span class="lightblue">href</span>=<span class="orange">"#"</span><span class="gray">&gt;</span>Home<span class="gray">&lt;/</span><span class="blue">a</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">li</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">li</span> <span class="lightblue">class</span>=<span class="orange">"nav-item"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">a</span> <span class="lightblue">class</span>=<span class="orange">"nav-link"</span> <span class="lightblue">href</span>=<span class="orange">"#"</span><span class="gray">&gt;</span>Link<span class="gray">&lt;/</span><span class="blue">a</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">li</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">li</span> <span class="lightblue">class</span>=<span class="orange">"nav-item dropdown"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">a</span> <span class="lightblue">class</span>=<span class="orange">"nav-link dropdown-toggle"</span> <span class="lightblue">href</span>=<span class="orange">"#"</span> <span class="lightblue">role</span>=<span class="orange">"button"</span> <span class="lightblue">data-bs-toggle</span>=<span class="orange">"dropdown"</span> <span class="lightblue">aria-expanded</span>=<span class="orange">"false"</span><span class="gray">&gt;</span><br>
+                                    Dropdown<br>
+                                    <span class="gray">&lt;/</span><span class="blue">a</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">ul</span> <span class="lightblue">class</span>=<span class="orange">"dropdown-menu"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">li</span><span class="gray">&gt;</span> <span class="gray">&lt;</span><span class="blue">a</span> <span class="lightblue">class</span>=<span class="orange">"dropdown-item"</span> <span class="lightblue">href</span>=<span class="orange">"#"</span><span class="gray">&gt;</span>Action<span class="gray">&lt;/</span><span class="blue">a</span><span class="gray">&gt;</span><span class="gray">&lt;/</span><span class="blue">li</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">li</span><span class="gray">&gt;</span> <span class="gray">&lt;</span><span class="blue">a</span> <span class="lightblue">class</span>=<span class="orange">"dropdown-item"</span> <span class="lightblue">href</span>=<span class="orange">"#"</span><span class="gray">&gt;</span>Another action<span class="gray">&lt;/</span><span class="blue">a</span><span class="gray">&gt;</span><span class="gray">&lt;/</span><span class="blue">li</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">li</span><span class="gray">&gt;</span><span class="gray">&lt;</span><span class="blue">hr</span> <span class="lightblue">class</span>=<span class="orange">"dropdown-divider"</span><span class="gray">&gt;</span><span class="gray">&lt;/</span><span class="blue">li</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">li</span><span class="gray">&gt;</span> <span class="gray">&lt;</span><span class="blue">a</span> <span class="lightblue">class</span>=<span class="orange">"dropdown-item"</span> <span class="lightblue">href</span>=<span class="orange">"#"</span><span class="gray">&gt;</span>Something else here<span class="gray">&lt;/</span><span class="blue">a</span><span class="gray">&gt;</span><span class="gray">&lt;/</span><span class="blue">li</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">ul</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">li</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">li</span> <span class="lightblue">class</span>=<span class="orange">"nav-item"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">a</span> <span class="lightblue">class</span>=<span class="orange">"nav-link disabled"</span><span class="gray">&gt;</span>Disabled<span class="gray">&lt;/</span><span class="blue">a</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">li</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">ul</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">form</span> <span class="lightblue">class</span>=<span class="orange">"d-flex"</span> <span class="lightblue">role</span>=<span class="orange">"search"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">input</span> <span class="lightblue">class</span>=<span class="orange">"form-control me-2"</span> <span class="lightblue">type</span>=<span class="orange">"search"</span> <span class="lightblue">placeholder</span>=<span class="orange">"Search"</span> <span class="lightblue">aria-label</span>=<span class="orange">"Search"</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;</span><span class="blue">button</span> <span class="lightblue">class</span>=<span class="orange">"btn btn-outline-success"</span> <span class="lightblue">type</span>=<span class="orange">"submit"</span> <span class="gray">&gt;</span>Search<span class="gray">&lt;/</span><span class="blue">button</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">form</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                    <span class="gray">&lt;/</span><span class="blue">nav</span><span class="gray">&gt;</span><br>
+                                  </p>
+                              </div>
+                          </div>
+                        </div>
+
+                        <a id="progressBarLink"></a>
+
+                    <!-- PROGRESS BAR -->
+                      <div class="container-fluid dark-background mt-4 pt-4 pb-4">
+                        <h2 class="mt-3 text-center">
+                          <svg width="40" height="40" fill="#12802d" height="200px" width="200px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M28,12H14H4c-2.2,0-4,1.8-4,4s1.8,4,4,4h10h14c2.2,0,4-1.8,4-4S30.2,12,28,12z M4,18c-1.1,0-2-0.9-2-2s0.9-2,2-2h10 c1.1,0,2,0.9,2,2s-0.9,2-2,2H4z"></path> </g></svg>
+                          &nbsp;Progress Bar</h2>
+
+                        <p class="px-3">A progress bar is a graphical representation of the progress of a task or process. It is a visual indicator that shows the amount of work that has been completed or the percentage of progress towards a goal.
+                            Bootstrap provides a simple and customizable progress bar component that you can use to display the progress of a task or process on your web page.
+                        </p>
+
+                        <div class="card mt-3 mx-3">
+                            <div class="card-header">
+                                <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                </div>
+                                <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="progress-bar" style="width: 50%"></div>
+                                </div>
+                                <div class="progress mt-3 mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="progress-bar" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Progress Bar</h5>
+                                <p class="card-text">For progress bar, you need to create a div with a <b>progress</b> class. This class presents a basic frame of progress bar.
+                                For progress indicator, you need another div nested inside previous div with a <b>progress-bar</b> class. By setting width of this div, you can set progress of progress bar.</p>
+                                <div class="text-center">
+                                  <button id="showProgressCode" class="btn btn-outline-success py-2 px-5">Show Code</button>
+                                </div>
+                                <p id="progressCode" class="codeText p-3 mt-2">
+                                  <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"progress mt-3"</span> <span class="lightblue">role</span>=<span class="orange">"progressbar"</span> <span class="lightblue">aria-label</span>=<span class="orange">"Basic example"</span> <span class="lightblue">aria-valuenow</span>=<span class="orange"><span class="orange">"0"</span></span> <span class="lightblue">aria-valuemin</span>=<span class="orange"><span class="orange">"0"</span></span> <span class="lightblue">aria-valuemax</span>=<span class="orange">"100"</span><span class="gray">&gt;</span><br>
+                                  <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"progress-bar"</span> <span class="lightblue">style</span>=<span class="orange">"width: 0%"</span><span class="gray">&gt;</span><span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                  <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                  <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"progress mt-3"</span> <span class="lightblue">role</span>=<span class="orange">"progressbar"</span> <span class="lightblue">aria-label</span>=<span class="orange">"Basic example"</span> <span class="lightblue">aria-valuenow</span>=<span class="orange">"50"</span> <span class="lightblue">aria-valuemin</span>=<span class="orange">"0"</span> <span class="lightblue">aria-valuemax</span>=<span class="orange">"100"</span><span class="gray">&gt;</span><br>
+                                  <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"progress-bar"</span> <span class="lightblue">style</span>=<span class="orange">"width: 50%"</span><span class="gray">&gt;</span><span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                  <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                  <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"progress mt-3 mb-2"</span> <span class="lightblue">role</span>=<span class="orange">"progressbar"</span> <span class="lightblue">aria-label</span>=<span class="orange">"Basic example"</span> <span class="lightblue">aria-valuenow</span>=<span class="orange"><span class="orange">"100"</span></span> <span class="lightblue">aria-valuemin</span>=<span class="orange">"0"</span> <span class="lightblue">aria-valuemax</span>=<span class="orange"><span class="orange">"100"</span></span><span class="gray">&gt;</span><br>
+                                  <span class="gray">&lt;</span><span class="blue">div</span> <span class="lightblue">class</span>=<span class="orange">"progress-bar"</span> <span class="lightblue">style</span>=<span class="orange">"width: 100%"</span><span class="gray">&gt;</span><span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                  <span class="gray">&lt;/</span><span class="blue">div</span><span class="gray">&gt;</span><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light mt-auto">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h3 class="mb-3"><b>Bootstrap 5</b></h3>
+            <p>
+              This project was made for faculty purposes.
+            </p>
+          </div>
+    
+          <div class="col-md-8">
+            <h3 class="mb-3"><b>Links</b></h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html" class="text-decoration-none">Home</a></li>
+              <li class="mb-2"><a href="about-us.html" class="text-decoration-none">About us</a></li>
+              <li class="mb-2"><a href="about-bootstrap.html" class="text-decoration-none">About Bootstrap 5</a></li>
+              <li class="mb-2"><a href="bootstrap-components.html" class="text-decoration-none">Bootstrap 5 Components</a></li>
+              <li class="mb-2"><a href="bootstrap-layouts.html" class="text-decoration-none">Bootstrap 5 Layouts</a></li>
+              <li class="mb-2"><a href="contact.html" class="text-decoration-none">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-success text-center py-3">
+        © 2023 WBT2022-27-28-30
+      </div>
+    </footer>
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>
